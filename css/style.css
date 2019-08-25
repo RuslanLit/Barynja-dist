@@ -1,0 +1,331 @@
+body {
+	font-family: Helvetica, GothicI, Academy;
+	font-size: 12pt;
+}
+header {
+	width: 100vw;
+	color: #fffffe;
+	height: 580px;
+	box-sizing: border-box;
+	background-color: #2b2a2f;
+}
+ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+  padding-left: 0; /*убираем левый отступ, равный 40px*/
+}
+a {text-decoration: none; /*убираем подчеркивание текста ссылок*/}
+
+.header__inner {
+	display: flex;
+	width: 1045px;
+	margin: 0 auto;
+	height: 50px;
+	padding: 15px;
+	box-sizing: border-box;
+}
+.header__inner > div {
+	margin-right: 50px;
+}
+.header__inner__logo, .footer__copiright__logo {
+	color: #f7cca9;
+	font-size: 22pt;
+	font-family: Izhitsa Regular;
+}
+.header__inner__social {
+	display: flex;
+}
+.vkontakte {
+	margin-right: 10px;
+}
+
+nav {width: 1045px;
+	margin: 0 auto;
+	height: 45px;
+	box-sizing: border-box;
+}
+ul {
+	display: flex;
+	margin-top: 15px;
+	justify-content: space-between;
+}
+li {
+	display: inline;
+}
+.carousel {
+	text-align: center;
+	height: 468px;
+	background-image: url(../img/banner1.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #2b2a2f;
+	
+}
+h1 {
+	font-family: Izhitsa Regular;
+	font-size: 103pt;
+	margin: 0;
+	margin-top: 0px;
+}
+p {
+	font-size: 39.8pt;
+	font-family: Helvetica Regular;
+	margin: -5px;
+}
+.beuti {
+	font-size: 48pt;
+	font-family: Academy Bold;
+	color: #6f5947;
+}
+.nav_arrow {
+	visibility: hidden ;
+	margin-right: 5px;
+}
+nav ul li:hover, nav ul li:active{
+background-image: url(../img/arrow.png);
+background-repeat: no-repeat;
+background-position: 0 center;
+}
+ a {display: block;
+	color: #f7cca9;
+	text-decoration: none;
+	font-family: Helvetica;
+	font-size: 19pt;
+	font-weight: 400;
+}
+a:hover {
+	color: #f9f9f7;
+	text-decoration: none;
+}
+.sub__nav a:hover {
+	text-decoration: underline;
+}
+li ul {
+	position: absolute; /* Подменю позиционируются абсолютно */
+    display: none; /* Скрываем подменю */
+    margin-left: 0px; /* Сдвигаем подменю вправо */
+    margin-bottom: 150px; /* Сдвигаем подменю вверх */
+}
+li:hover ul { 
+    display: block; /* При выделении пункта курсором мыши отображается подменю */
+    background: #2b2a2f;
+    width: 405px;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+   }
+ .decorative__element, .trust__proffi, .banner__beauty{
+ 	width: 100vw;
+ 	text-align: center;
+ 	margin: 0 auto;
+ }
+ .center {
+ 	width: 100%;
+ 	display:block; margin:10px auto;
+ }
+ .main, .about__me {
+ 	background-image: url(../img/decor-left.png);
+ 	background-repeat: no-repeat;
+ 	-webkit-background-size: cover;
+ 	background-size: cover;
+ }
+ .about__me__title h2 {
+	font-family: Academy Bold;
+	font-size: 42pt;
+	text-align: center;
+	font-weight: bold;
+	color: #6f5947;
+	margin-top: -70px;
+}
+ .articles {
+ 	display: grid;
+ 	text-align: center;
+ 	width: 90%;
+  	height: 100vh;
+  	margin: 0 auto;
+	
+ 	grid-template-areas: 
+ 	"a b"
+ 	"c d"
+ 	"e f"
+ 	"g h";
+ }
+ .articles p {
+ 	font-size: 28pt;
+	font-family: Academy Bold;
+	margin-bottom: 10px;
+ }
+ .articles article {
+ 	display: block;
+ 	margin: 25px 25px;
+ 	border: none;
+ 	border-bottom: 54px solid red;
+ 	border-image: url(../img/decorative-element-chapter.png) 100% 10;
+ }
+ .article1 {
+ 	grid-area: a;
+ }
+ .article2 {
+ 	grid-area: b;
+ }
+ .article3 {
+ 	grid-area: c;
+ }
+ .article4 {
+ 	grid-area: d;
+ }
+ .article5 {
+ 	grid-area: e;
+ }
+ .article6 {
+ 	grid-area: f;
+ }
+ .article7 {
+ 	grid-area: g;
+ }
+ .article8 {
+ 	grid-area: h;
+ }
+ .main p:hover{
+ 	color: #5d5452;
+ 	z-index: 34;
+ }
+ .article5 P {
+ 	margin-top: 3.3em;
+ }
+.main {
+	height: 2055px;
+}
+.main a { 
+ 	display: block;
+ 	position: relative;
+  }
+.main a:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url(../img/change.png);
+	opacity: 0; 
+}
+
+.main a:hover:before,
+.main a:hover:after { 
+	opacity: 1;
+}
+
+.about__me__main, .decorative-element-chapter, .prices__main {
+	width: 1045px;
+ 	display: block;
+ 	margin: 0 auto;
+ }
+ .decorative-element-chapter img {
+ 	width: 100%;
+ }
+ 
+ .about__me__hello h3 {
+ 	text-align: center;
+ 	font-family: Academy Bold;
+ 	font-size: 28pt;
+ 	margin-bottom: 5px;
+ }
+ .about__me__hello img {
+ 	float: left;
+ 	margin:0px 30px 0px 0px;
+ }
+ .about__me__hello p {
+ 	font-size: 13pt;
+ 	font-family:Century Gothic Regular;
+ 	margin-bottom: 1.2em;
+  }
+  .about__me__skills p {
+  	font-size: 16pt;
+  }
+  .history {
+  	display: block;
+    font-family: Century Gothic Bold;
+    font-size: 18pt;
+    text-align: left;
+    margin-top: 55px;
+    font-weight: bold;
+  }
+ .about__me__skills img {
+ 	float: right;
+ 	margin: 0px 0px 80px 40px;
+ 	margin-top: -10px;
+ }
+ .decorative-element-chapter {
+ 	margin-bottom: 100px;
+ }
+ .banner__beauty {
+ 	width: 100vw;
+ 	text-align: center;
+ }
+ table {
+ 	margin: 0 auto 65px;
+ 	width: 90%;
+ 	text-transform: uppercase;
+ 	border-collapse: collapse;
+ }
+ .head__tab {
+ 	font-size: 28pt;
+ 	font-family: Academy Bold;
+ 	font-weight: bold;
+ 	color: #6f5947;
+ 	text-align: center ;
+ 	height: 60px;
+ }
+ tr {
+ 	font-size: 19pt;
+ 	font-family: Academy Regular;
+ 	color: #020201;
+ 	height: 50px;
+ }
+tr:nth-child(even) {
+ 	background-color: #f1eae0;
+ }
+ footer {
+ 	height: 185px;
+ 	width: 100vw;
+ 	padding: 50px;
+	color: #fffffe;
+	box-sizing: border-box;
+	background-color: #2b2a2f;
+ }
+ .footer__inner {
+ 	width: 1045px;
+ 	margin: 0 auto;
+ 	display: flex;
+ 	justify-content: space-between;
+ }
+ .footer__adress > div, .footer__social > a, .footer__copiright > div {
+ 	margin-bottom: 10px;
+ }
+ .footer__adress a, .footer__adress p{
+ 	display: inline;
+ 	color: #d2d1d2;
+ 	margin-left: 10px;
+ 	font-size: 17pt;
+ 	font-family: Helvetica Neue Regular;
+ }
+ .footer__adress, .footer__social, .footer__copiright {
+ 	display: flex;
+ 	flex-direction: column;
+ 	height: 65px;
+ }
+ .footer__social a {
+ 	display: block;
+ }
+ .social {
+ 	color: #d2d1d2;
+ 	font-family: Helvetica Neue Regular;
+ 	font-size: 18pt;
+ }
+ .footer__copiright, .footer__social {
+ 	text-align: center;
+ }
+ footer a:hover {
+ 	text-decoration: none;
+ }
