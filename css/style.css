@@ -18,7 +18,7 @@ a {text-decoration: none; /*убираем подчеркивание текст
 
 .header__inner {
 	display: flex;
-	width: 960px;
+	width: 980px;
 	margin: 0 auto;
 	height: 50px;
 	padding: 15px;
@@ -39,7 +39,7 @@ a {text-decoration: none; /*убираем подчеркивание текст
 	margin-right: 10px;
 }
 
-nav {width: 960px;
+nav {width: 980px;
 	margin: 0 auto;
 	height: 35px;
 	padding: 0px 50px 0px 25px;
@@ -118,7 +118,6 @@ a:hover {
 li ul {
 	position: absolute; /* Подменю позиционируются абсолютно */
     display: none; /* Скрываем подменю */
-    margin-left: 0px; /* Сдвигаем подменю вправо */
     margin-bottom: 150px; /* Сдвигаем подменю вверх */
 }
 li:hover ul a {
@@ -127,13 +126,13 @@ li:hover ul a {
 li:hover ul { 
     display: block; /* При выделении пункта курсором мыши отображается подменю */
     background: #2b2a2f;
-    width: 360px;
-    height: 45%;
-    line-height:1.5em;
+    width: 390px;
+    height: 350px;
+    line-height:1.4em;
     font-size: 10pt;
     margin-top:0px;
-    text-align: justify;
-    padding: 0 2% 0 2%;
+    text-align: left;
+    padding: 0 2% 0 4%;
     background-image: url(../img/decorative-element-chapter.png);
     background-repeat: no-repeat;
     background-position: center 95%;
@@ -174,10 +173,10 @@ li:hover ul {
  .articles {
  	display: grid;
     text-align: center;
-    width: 70%;
+    width: 980px;
     height: auto;
     margin: 0 auto;
-    grid-gap: 0px;
+    grid-gap: 70px 0px;
     justify-items: center;
     align-items: center;
  	grid-template-areas: 
@@ -191,7 +190,11 @@ li:hover ul {
  	font-size: 20pt;
 	font-family: Academy Bold;
 	font-weight: 900;
+	color: #6f5947;
 	margin-bottom: 35px;
+ }
+ .articles h3:hover {
+ 	color: #9b7453;
  }
  .articles article {
  	display: block;
@@ -278,7 +281,7 @@ li:hover ul {
  	display:block; margin:96px auto;
 }
 .about__me__main, .decorative-element-chapter, .prices__main {
-	width: 960px;
+	width: 980px;
  	display: block;
  	margin: 0 auto;
  }
@@ -386,7 +389,7 @@ tr:nth-child(even) {
 	background-color: #2b2a2f;
  }
  .footer__inner {
- 	width: 960px;
+ 	width: 980px;
  	margin: 0 auto;
  	display: flex;
  	justify-content: space-between;
@@ -420,3 +423,145 @@ tr:nth-child(even) {
  footer a:hover {
  	text-decoration: none;
  }
+/*media query*/
+@media screen and (min-width: 600px) and (max-width: 1000px) { 
+header {
+    height: auto;
+}
+.header__inner {
+	width: 100vw;
+	height: 50px;
+	padding: 5px;
+}
+.header__inner > div {
+	margin-right: 2%;
+}
+.header__inner__logo, .footer__copiright__logo {
+	font-size: 17pt;
+}
+
+.vkontakte {
+	margin-right: 1em;
+}
+
+nav {width: 95vw;
+	margin: 0 auto;
+	height: 15px;
+	padding: 0px 1% 0px 1%;
+	box-sizing: border-box;
+}
+ul {
+	display: flex;
+	margin-top: 0px;
+	justify-content: space-between;
+}
+li {
+	display: inline;
+}
+a {
+    font-size: 12pt;
+}
+.carousel {
+	height: 250px;
+	background-size:50%;
+	background-size: cover;
+}
+.carousel__title {
+	position: relative;
+	top: 19%;
+    left: -2%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.carousel__title p{
+    margin-top: -5px;
+}
+.carousel__title span {
+	font-size: 42pt;
+	margin-top: 20px;
+}
+.studia {
+	font-size: 18pt;
+}
+p.beuti {
+	font-size: 20pt;
+}
+.articles {
+    display: grid;
+    text-align: center;
+    width: 100vw;
+    height: auto;
+    margin: 0 auto;
+    grid-gap: 30px 0px;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: "a" "b"
+ "c" "d"
+ "e" "f"
+ "g" "h";
+}
+.trust__proffi {
+    width: 95vw;
+    height: 210px;
+    margin-bottom: 10px;
+}
+.decorative-element-chapter img {
+    object-fit: none;
+    object-position: center;
+    height: 100px;
+    width: 98vw;
+    margin-top: 12px;
+    margin-bottom: -25px;
+}
+.about__me, .about__me__main {
+	width: 100vw;
+}
+.about__me__title h2 {
+    font-size: 25pt;
+    color: #6f5947;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.about__me__skills p {
+	width: 98vw;
+	margin-left: 6px;
+}
+.about__me__hello img, .about__me__skills img {
+	width:40%;
+	height: 30%;
+    margin: 0px 25% 0px 25%;
+    float: left;
+}
+.skills__text,.hello__text {
+	float: left;
+	width: 100vw;
+	padding-left: 10px;
+	margin-right: 10px;
+	text-align: left;
+}
+.decorative-element-chapter {
+	width: 100vw;
+}
+.history {
+	float: left;
+} 
+ 
+.banner__beauty__center {
+    width: 100vw;
+    object-fit: contain;
+    height: 250px !important;
+}
+table {
+    margin: 0 5%; 
+    width: 90vw;
+
+    border-collapse: collapse;
+}
+footer {
+	padding: 45px 5px 10px 5px;
+}
+.footer__inner {
+    width: 100vw;
+    font-size: 10pt;
+    justify-content: space-evenly;
+}
