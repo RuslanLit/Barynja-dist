@@ -121,14 +121,27 @@ li ul {
     margin-left: 0px; /* Сдвигаем подменю вправо */
     margin-bottom: 150px; /* Сдвигаем подменю вверх */
 }
+li:hover ul a {
+	margin-top: 30px;
+}
 li:hover ul { 
     display: block; /* При выделении пункта курсором мыши отображается подменю */
     background: #2b2a2f;
-    width: 405px;
-    text-align: left;
-    padding: 20px;
+    width: 360px;
+    height: 45%;
+    line-height:1.5em;
+    font-size: 10pt;
+    margin-top:0px;
+    text-align: justify;
+    padding: 0 2% 0 2%;
+    background-image: url(../img/decorative-element-chapter.png);
+    background-repeat: no-repeat;
+    background-position: center 95%;
+    z-index: 30;
+    background-size: 85%;
     box-sizing: border-box;
    }
+ }
  .decorative__element, .trust__proffi {
  	width: 100vw;
  	object-fit: none; /* Do not scale the image */
@@ -142,10 +155,10 @@ li:hover ul {
  	display:block; margin:10px auto;
  	
  }
- .main, .about__me {
- 	background-image: url(../img/decor-left.png);
- 	background-repeat: no-repeat;
- 	height: auto;
+.about__me {
+ 	background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
  	-webkit-background-size: cover;
  	background-size: cover;
  }
@@ -160,19 +173,20 @@ li:hover ul {
 }
  .articles {
  	display: grid;
- 	text-align: center;
- 	width: 88%;
-  	height: auto;
-  	margin: 0 auto;
-  	justify-items: center;
-  	align-items: center;
-	grid-gap: 0px;
+    text-align: center;
+    width: 82%;
+    height: auto;
+    margin: 0 auto;
+    grid-gap: 0px;
+    justify-items: center;
+    align-items: center;
  	grid-template-areas: 
  	"a b"
  	"c d"
  	"e f"
  	"g h";
  }
+
  .articles h3 {
  	font-size: 20pt;
 	font-family: Academy Bold;
@@ -223,6 +237,10 @@ li:hover ul {
  }
 .main {
 	height: auto;
+	background:
+	url(../img/decor-left.png) no-repeat -2% 80%,
+    url(../img/decor-right.png) no-repeat 105% 15%;
+    background-size: 15%;
 }
 .main a { 
  	display: block;
