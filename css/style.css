@@ -32,7 +32,7 @@ a {text-decoration: none; /*убираем подчеркивание текст
 	font-size: 22pt;
 	font-family: Izhitsa Regular;
 }
-.header__inner__social {
+.header__inner__social { 
 	display: flex;
 }
 .vkontakte {
@@ -41,7 +41,8 @@ a {text-decoration: none; /*убираем подчеркивание текст
 
 nav {width: 1045px;
 	margin: 0 auto;
-	height: 45px;
+	height: 35px;
+	padding: 0px 50px 0px 25px;
 	box-sizing: border-box;
 }
 ul {
@@ -61,21 +62,35 @@ li {
 	color: #2b2a2f;
 	
 }
-h1 {
+.carousel__title {
+	position: relative;
+	top: 19%;
+    left: -2%;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+.carousel__title p{
+	position: relative;
+    left: 0%;
+    margin-top: -5px;
+}
+.carousel__title span {
 	font-family: Izhitsa Regular;
-	font-size: 103pt;
-	margin: 0;
-	margin-top: 0px;
+	font-size: 78pt;
+	margin-top: 50px;
 }
-p {
-	font-size: 39.8pt;
+.studia {
+	font-size: 22pt;
 	font-family: Helvetica Regular;
-	margin: -5px;
+	margin: 5px;
 }
-.beuti {
-	font-size: 48pt;
+p.beuti {
+	font-size: 30pt;
 	font-family: Academy Bold;
+	font-weight: bold;
 	color: #6f5947;
+	margin-top: 20px;
 }
 .nav_arrow {
 	visibility: hidden ;
@@ -90,7 +105,7 @@ background-position: 0 center;
 	color: #f7cca9;
 	text-decoration: none;
 	font-family: Helvetica;
-	font-size: 19pt;
+	font-size: 16pt;
 	font-weight: 400;
 }
 a:hover {
@@ -114,34 +129,40 @@ li:hover ul {
     padding: 20px;
     box-sizing: border-box;
    }
- .decorative__element, .trust__proffi, .banner__beauty{
+ .decorative__element, .trust__proffi {
  	width: 100vw;
+ 	object-fit: none; /* Do not scale the image */
+  	object-position: center; /* Center the image within the element */
  	text-align: center;
- 	margin: 0 auto;
+ 	height: 80px;
+ 	margin: 20px auto 0px auto;
  }
  .center {
  	width: 100%;
  	display:block; margin:10px auto;
+ 	
  }
  .main, .about__me {
  	background-image: url(../img/decor-left.png);
  	background-repeat: no-repeat;
+ 	height: auto;
  	-webkit-background-size: cover;
  	background-size: cover;
  }
  .about__me__title h2 {
 	font-family: Academy Bold;
-	font-size: 42pt;
+	font-size: 32pt;
 	text-align: center;
 	font-weight: bold;
 	color: #6f5947;
 	margin-top: -70px;
+	margin-bottom: 55px;
 }
  .articles {
  	display: grid;
  	text-align: center;
- 	width: 90%;
-  	height: 100vh;
+ 	width: 88%;
+  	height: auto;
   	margin: 0 auto;
 	
  	grid-template-areas: 
@@ -151,16 +172,21 @@ li:hover ul {
  	"g h";
  }
  .articles p {
- 	font-size: 28pt;
+ 	font-size: 22pt;
 	font-family: Academy Bold;
-	margin-bottom: 10px;
+	font-weight: 900;
+	margin-bottom: 35px;
  }
  .articles article {
  	display: block;
- 	margin: 25px 25px;
+ 	margin: 20px 30px;
  	border: none;
- 	border-bottom: 54px solid red;
+ 	min-height: 410px;
+ 	border-bottom: 60px solid red;
  	border-image: url(../img/decorative-element-chapter.png) 100% 10;
+ }
+ article {
+ 	margin-bottom: 45px;
  }
  .article1 {
  	grid-area: a;
@@ -194,7 +220,7 @@ li:hover ul {
  	margin-top: 3.3em;
  }
 .main {
-	height: 2055px;
+	height: auto;
 }
 .main a { 
  	display: block;
@@ -208,6 +234,7 @@ li:hover ul {
 	right: 0;
 	bottom: 0;
 	background: url(../img/change.png);
+	background-repeat: no-repeat;
 	opacity: 0; 
 }
 
@@ -215,25 +242,38 @@ li:hover ul {
 .main a:hover:after { 
 	opacity: 1;
 }
-
+.trust__proffi {
+	width: 100;
+	height: 510px;
+	background-image: url(../img/banner3.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+ 	display:block; margin:96px auto;
+}
 .about__me__main, .decorative-element-chapter, .prices__main {
 	width: 1045px;
  	display: block;
  	margin: 0 auto;
  }
  .decorative-element-chapter img {
- 	width: 100%;
+ 	object-fit: none; /* Do not scale the image */
+  	object-position: center; /* Center the image within the element */
+  	height: 100px;
+  	width: 100%;
+ 	margin-top: 42px;
+ 	margin-bottom: -25px;
  }
  
  .about__me__hello h3 {
  	text-align: center;
  	font-family: Academy Bold;
- 	font-size: 28pt;
+ 	font-size: 20pt;
  	margin-bottom: 5px;
  }
  .about__me__hello img {
  	float: left;
- 	margin:0px 30px 0px 0px;
+ 	margin:0px 40px 0px 0px;
  }
  .about__me__hello p {
  	font-size: 13pt;
@@ -241,15 +281,18 @@ li:hover ul {
  	margin-bottom: 1.2em;
   }
   .about__me__skills p {
-  	font-size: 16pt;
+  	font-size: 13pt;
+ 	font-family:Century Gothic Regular;
+ 	line-height: 1.2em;
   }
   .history {
   	display: block;
     font-family: Century Gothic Bold;
-    font-size: 18pt;
+    font-size: 14pt;
     text-align: left;
-    margin-top: 55px;
+    margin-top: 35px;
     font-weight: bold;
+    margin-bottom: -20px;
   }
  .about__me__skills img {
  	float: right;
@@ -263,33 +306,52 @@ li:hover ul {
  	width: 100vw;
  	text-align: center;
  }
+ .banner__beauty__center {
+ 	object-fit: none; /* Do not scale the image */
+  	object-position: center; /* Center the image within the element */
+  	height: 510px;
+  	width: 100%;
+ }
+ .prices {
+ 	height: auto;
+ }
  table {
  	margin: 0 auto 65px;
- 	width: 90%;
- 	text-transform: uppercase;
+ 	width: 80%;
  	border-collapse: collapse;
  }
  .head__tab {
- 	font-size: 28pt;
+ 	font-size: 22pt;
  	font-family: Academy Bold;
  	font-weight: bold;
  	color: #6f5947;
  	text-align: center ;
  	height: 60px;
+ 	margin-bottom:15px;
+ }
+ th {
+ 	padding: 0 5% 0 5%;
  }
  tr {
- 	font-size: 19pt;
+ 	font-size: 14pt;
  	font-family: Academy Regular;
  	color: #020201;
+
  	height: 50px;
  }
 tr:nth-child(even) {
  	background-color: #f1eae0;
  }
+ td {
+ 	padding: 0 0 0 5%;
+ }
+ td:nth-child(even) {
+ 	font-size: 18pt;
+ }
  footer {
  	height: 185px;
  	width: 100vw;
- 	padding: 50px;
+ 	padding: 50px 7% 50px 7%;
 	color: #fffffe;
 	box-sizing: border-box;
 	background-color: #2b2a2f;
@@ -307,7 +369,7 @@ tr:nth-child(even) {
  	display: inline;
  	color: #d2d1d2;
  	margin-left: 10px;
- 	font-size: 17pt;
+ 	font-size: 14pt;
  	font-family: Helvetica Neue Regular;
  }
  .footer__adress, .footer__social, .footer__copiright {
@@ -321,7 +383,7 @@ tr:nth-child(even) {
  .social {
  	color: #d2d1d2;
  	font-family: Helvetica Neue Regular;
- 	font-size: 18pt;
+ 	font-size: 14pt;
  }
  .footer__copiright, .footer__social {
  	text-align: center;
