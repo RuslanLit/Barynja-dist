@@ -18,18 +18,18 @@ a {text-decoration: none; /*убираем подчеркивание текст
 
 .header__inner {
 	display: flex;
-	width: 1045px;
+	width: 960px;
 	margin: 0 auto;
 	height: 50px;
 	padding: 15px;
 	box-sizing: border-box;
 }
 .header__inner > div {
-	margin-right: 50px;
+	margin-right: 20px;
 }
 .header__inner__logo, .footer__copiright__logo {
 	color: #f7cca9;
-	font-size: 22pt;
+	font-size: 21pt;
 	font-family: Izhitsa Regular;
 }
 .header__inner__social { 
@@ -39,7 +39,7 @@ a {text-decoration: none; /*убираем подчеркивание текст
 	margin-right: 10px;
 }
 
-nav {width: 1045px;
+nav {width: 960px;
 	margin: 0 auto;
 	height: 35px;
 	padding: 0px 50px 0px 25px;
@@ -156,7 +156,7 @@ li:hover ul {
 	font-weight: bold;
 	color: #6f5947;
 	margin-top: -70px;
-	margin-bottom: 55px;
+	margin-bottom: 50px;
 }
  .articles {
  	display: grid;
@@ -164,29 +164,31 @@ li:hover ul {
  	width: 88%;
   	height: auto;
   	margin: 0 auto;
-	
+  	justify-items: center;
+  	align-items: center;
+	grid-gap: 0px;
  	grid-template-areas: 
  	"a b"
  	"c d"
  	"e f"
  	"g h";
  }
- .articles p {
- 	font-size: 22pt;
+ .articles h3 {
+ 	font-size: 20pt;
 	font-family: Academy Bold;
 	font-weight: 900;
 	margin-bottom: 35px;
  }
  .articles article {
  	display: block;
- 	margin: 20px 30px;
+ 	text-align: center;
  	border: none;
  	min-height: 410px;
  	border-bottom: 60px solid red;
  	border-image: url(../img/decorative-element-chapter.png) 100% 10;
  }
- article {
- 	margin-bottom: 45px;
+ article, article img {
+ 	width: 450px;
  }
  .article1 {
  	grid-area: a;
@@ -216,7 +218,7 @@ li:hover ul {
  	color: #5d5452;
  	z-index: 34;
  }
- .article5 P {
+ .article5 h3 {
  	margin-top: 3.3em;
  }
 .main {
@@ -230,17 +232,23 @@ li:hover ul {
 	content: '';
 	position: absolute;
 	top: 0;
+	width: 100%;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	background: url(../img/change.png);
 	background-repeat: no-repeat;
+	background-size: cover;
 	opacity: 0; 
 }
+.img__link {
 
+
+}
 .main a:hover:before,
 .main a:hover:after { 
 	opacity: 1;
+	width: 100%;
 }
 .trust__proffi {
 	width: 100;
@@ -252,7 +260,7 @@ li:hover ul {
  	display:block; margin:96px auto;
 }
 .about__me__main, .decorative-element-chapter, .prices__main {
-	width: 1045px;
+	width: 960px;
  	display: block;
  	margin: 0 auto;
  }
@@ -276,19 +284,22 @@ li:hover ul {
  	margin:0px 40px 0px 0px;
  }
  .about__me__hello p {
- 	font-size: 13pt;
- 	font-family:Century Gothic Regular;
- 	margin-bottom: 1.2em;
-  }
-  .about__me__skills p {
-  	font-size: 13pt;
+ 	font-size: 11pt;
  	font-family:Century Gothic Regular;
  	line-height: 1.2em;
+  }
+  .about__me__skills {
+  	margin-top: 110px;
+  }
+  .about__me__skills p {
+  	font-size: 12.5pt;
+ 	font-family:Century Gothic Regular;
+ 	line-height: 1.35em;
   }
   .history {
   	display: block;
     font-family: Century Gothic Bold;
-    font-size: 14pt;
+    font-size: 13pt;
     text-align: left;
     margin-top: 35px;
     font-weight: bold;
@@ -317,12 +328,12 @@ li:hover ul {
  }
  table {
  	margin: 0 auto 65px;
- 	width: 80%;
+ 	width:90%;
  	border-collapse: collapse;
  }
  .head__tab {
  	font-size: 22pt;
- 	font-family: Academy Bold;
+ 	font-family: GothicI;
  	font-weight: bold;
  	color: #6f5947;
  	text-align: center ;
@@ -357,7 +368,7 @@ tr:nth-child(even) {
 	background-color: #2b2a2f;
  }
  .footer__inner {
- 	width: 1045px;
+ 	width: 960px;
  	margin: 0 auto;
  	display: flex;
  	justify-content: space-between;
