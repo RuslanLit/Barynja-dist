@@ -174,7 +174,7 @@ li:hover ul {
  .articles {
  	display: grid;
     text-align: center;
-    width: 75%;
+    width: 70%;
     height: auto;
     margin: 0 auto;
     grid-gap: 0px;
